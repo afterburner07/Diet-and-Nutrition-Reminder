@@ -37,7 +37,7 @@ public class SecondActivity extends AppCompatActivity {
 
     public void buttonForwardOnClick(View v)
     {
-        Intent secondIntent=new Intent(this,SecondActivity.class);
+        Intent secondIntent=new Intent(this,ThirdActivity.class);
         startActivity(secondIntent);
     }
 
