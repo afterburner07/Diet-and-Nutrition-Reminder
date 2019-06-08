@@ -30,9 +30,11 @@ public class SecondActivity extends AppCompatActivity {
     {
 //        getIntent().addFlags(getIntent().FLAG_ACTIVITY_CLEAR_TOP);
 //        finish();
-        super.finish();
+//        super.finish();
 //        onBackPressed();
 //        finishActivity(0);
+        finish();
+        System.exit(0);
     }
 
     public void buttonForwardOnClick(View v)
