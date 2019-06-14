@@ -13,18 +13,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="11dp"
+        android:layout_below="@+id/linearLayoutMealList"
         android:onClick="buttonBackOnClick"
-        android:text="Back" />
+        android:text="Exit" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="11dp"
+        android:layout_alignTop="@+id/button3"
+        android:layout_toEndOf="@+id/textView"
         android:onClick="buttonForwardOnClick"
         android:text="Forward" />
 
@@ -36,4 +34,67 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:text="First Activity" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMealInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewMealName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lunch"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+        <TextView
+            android:id="@+id/textViewMealInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="is about: "
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="sampleTime"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayoutMealInfo"
+        android:gravity="center"
+        android:text="remained meal list" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMealList"
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Afternoon Meal" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dinner Meal" />
+    </LinearLayout>
 </RelativeLayout>

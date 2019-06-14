@@ -43,4 +43,10 @@ public class SecondActivity extends AppCompatActivity {
         startActivity(secondIntent);
     }
 
+    public void onBackPressed()
+    {
+        finish();
+        System.exit(0);
+    }
+
 }
