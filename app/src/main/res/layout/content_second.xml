@@ -12,8 +12,8 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/linearLayoutMealList"
         android:onClick="buttonBackOnClick"
         android:text="Exit" />
 
@@ -21,7 +21,8 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
         android:layout_toEndOf="@+id/textView"
         android:onClick="buttonForwardOnClick"
         android:text="Forward" />
@@ -80,7 +81,7 @@
     <LinearLayout
         android:id="@+id/linearLayoutMealList"
         android:layout_width="match_parent"
-        android:layout_height="316dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView6"
         android:orientation="vertical">
