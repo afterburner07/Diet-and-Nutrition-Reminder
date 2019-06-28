@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    tools:context=".ThirdActivity">
+    tools:context=".FourthActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Lunch"
+            android:text="Chicken"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
 
         <TextView
@@ -75,81 +75,79 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/linearLayoutNutritionInfo"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Chicken" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Rice" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fruits" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layoutLinearTotal"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button5"
-        android:layout_alignParentStart="true"
-        android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/layoutLinearNutrition"
+            android:id="@+id/layoutLinearProtein"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:gravity="right"
-                android:text="Total Nutrition: " />
+                android:paddingRight="10dp"
+                android:text="Protein: " />
 
             <TextView
-                android:id="@+id/textView17"
-                android:layout_width="match_parent"
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="sample %" />
+                android:layout_weight="0.5"
+                android:text="Protein Values" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/layoutLinearFat"
+            android:id="@+id/layoutLinearCalories"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView16"
-                android:layout_width="match_parent"
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:gravity="right"
-                android:text="Total Fat: " />
+                android:paddingRight="10dp"
+                android:text="Calories: " />
 
             <TextView
-                android:id="@+id/textView13"
-                android:layout_width="match_parent"
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="sample %" />
+                android:layout_weight="0.5"
+                android:text="CaloriesValue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutLinearCarvs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="Carvs: " />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="CarvsValue" />
         </LinearLayout>
 
     </LinearLayout>
+
 </RelativeLayout>
