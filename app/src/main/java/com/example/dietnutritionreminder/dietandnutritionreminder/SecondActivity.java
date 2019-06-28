@@ -39,8 +39,8 @@ public class SecondActivity extends AppCompatActivity {
 
     public void buttonForwardOnClick(View v)
     {
-        Intent secondIntent=new Intent(this,ThirdActivity.class);
-        startActivity(secondIntent);
+        Intent intentThird=new Intent(this,ThirdActivity.class);
+        startActivity(intentThird);
     }
 
     public void onBackPressed()

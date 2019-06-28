@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void nextActivity()
     {
-        Intent secondIntent=new Intent(this,SecondActivity.class);
-        startActivity(secondIntent);
+        Intent intentSecond=new Intent(this,SecondActivity.class);
+        startActivity(intentSecond);
     }
 
     public void buttonExitOnClick(View v)
