@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#50aa66cc"
     android:padding="5dp"
     tools:context=".ThirdActivity">
 
@@ -78,19 +79,19 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/textViewChicken"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Chicken" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/textViewRice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Rice" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/textViewFruits"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Fruits" />
