@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7d00ddff"
+    android:background="#3d00ddff"
     android:padding="5dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".SecondActivity"
@@ -23,20 +23,10 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="51dp"
-        android:layout_toEndOf="@+id/textView"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentEnd="true"
         android:onClick="buttonForwardOnClick"
         android:text="Forward" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:text="First Activity" />
 
     <LinearLayout
         android:id="@+id/linearLayoutMealInfo"
@@ -51,14 +41,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center"
             android:text="Lunch"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewMealInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center"
             android:text="is about: "
             android:textAppearance="@style/TextAppearance.AppCompat" />
 
@@ -68,7 +62,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="sampleTime"
-            android:textAppearance="@style/TextAppearance.AppCompat" />
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 
     <TextView
@@ -89,15 +84,21 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewAfternoon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Afternoon Meal" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textViewDinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dinner Meal" />
+
+        <TextView
+            android:id="@+id/textViewBreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breakfast Meal" />
     </LinearLayout>
 </RelativeLayout>
