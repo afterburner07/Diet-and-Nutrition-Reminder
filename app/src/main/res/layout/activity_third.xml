@@ -8,15 +8,6 @@
     android:padding="5dp"
     tools:context=".ThirdActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
-        android:text="Second Activity" />
-
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
@@ -59,7 +50,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Lunch"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView9"
@@ -82,19 +75,41 @@
             android:id="@+id/textViewChicken"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
             android:text="Chicken" />
 
         <TextView
             android:id="@+id/textViewRice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
             android:text="Rice" />
 
         <TextView
             android:id="@+id/textViewFruits"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
             android:text="Fruits" />
+
+        <TextView
+            android:id="@+id/textViewVegetable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="Vegetable" />
+
+        <TextView
+            android:id="@+id/textViewFish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="Fish" />
 
     </LinearLayout>
 
@@ -111,6 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:padding="5dp"
             android:orientation="horizontal">
 
             <TextView
@@ -134,6 +150,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:padding="5dp"
             android:orientation="horizontal">
 
             <TextView

@@ -4,17 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3c99cc00"
     android:padding="5dp"
     tools:context=".FourthActivity">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
-        android:text="Second Activity" />
 
     <Button
         android:id="@+id/button5"
@@ -32,7 +24,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:onClick="onClickForward"
-        android:text="Forward" />
+        android:text="Forward"
+        android:visibility="invisible" />
 
     <LinearLayout
         android:id="@+id/linearLayoutNutritionInfo"
@@ -58,7 +51,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Chicken"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView9"
@@ -83,7 +78,8 @@
             android:id="@+id/layoutLinearProtein"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/textView11"
@@ -106,7 +102,8 @@
             android:id="@+id/layoutLinearCalories"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/textView13"
@@ -129,7 +126,8 @@
             android:id="@+id/layoutLinearCarvs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/textView15"
@@ -152,7 +150,8 @@
             android:id="@+id/layoutLinearFat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/textView19"
@@ -175,7 +174,8 @@
             android:id="@+id/layoutLinearCarbohydrate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/textView21"
@@ -198,7 +198,8 @@
             android:id="@+id/layoutLinearSodium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/textView23"
