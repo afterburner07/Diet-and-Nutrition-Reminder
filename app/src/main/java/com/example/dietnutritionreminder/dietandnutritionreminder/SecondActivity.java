@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -18,14 +19,30 @@ public class SecondActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnLongClickListener(new View.OnLongClickListener()
+        {
+            @Override
+            public boolean onLongClick(View v) {
+                Toast.makeText(SecondActivity.this,"Tap here to go to Settings",Toast.LENGTH_LONG).show();
+                return false;
+            }
+        });
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+                goToSettings();
             }
         });
+
     }
+
+    public void goToSettings() {
+        Intent intentSettings=new Intent(this, SettingsActivity.class);
+        startActivity(intentSettings);
+    }
+
     public void buttonBackOnClick(View v)
     {
 //        getIntent().addFlags(getIntent().FLAG_ACTIVITY_CLEAR_TOP);
