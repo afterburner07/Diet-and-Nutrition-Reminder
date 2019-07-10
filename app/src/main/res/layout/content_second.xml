@@ -33,7 +33,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView"
         android:orientation="horizontal">
 
         <TextView
@@ -42,6 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:onClick="onClicktextMealName"
             android:text="Lunch"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="@android:color/black"
