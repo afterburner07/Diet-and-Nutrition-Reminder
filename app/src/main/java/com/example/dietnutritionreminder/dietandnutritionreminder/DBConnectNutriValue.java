@@ -9,11 +9,12 @@ import java.sql.DriverManager;
 
 public class DBConnectNutriValue {
     // String ip = "192.168.1.10";
-    String ip = "192.168.0.106";
+//    String ip = "192.168.0.106";
+    public String ip = "192.168.0.101";
     String classs = "net.sourceforge.jtds.jdbc.Driver";
-    String db = "Andro";
-    String un = "RumkyApu";
-    String password = "123";
+    String db = "diet_nutrition";
+    String un = "dietnutrition";
+    String password = "DietandNutrition";
 
     @SuppressLint("NewApi")
     public Connection CONN() {

@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'configKey'
             keyPassword 'passwd'
-            storeFile file('G:/PendriveAndroidStudio/AndroidStudio/bin/keyStore.jks')
+//            storeFile file('G:/PendriveAndroidStudio/AndroidStudio/bin/keyStore.jks')
             storePassword 'passwd'
         }
     }

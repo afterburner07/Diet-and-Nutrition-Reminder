@@ -43,6 +43,16 @@ public class SecondActivity extends AppCompatActivity {
         startActivity(intentSettings);
     }
 
+    private void gotoLunchNutritionList() {
+        Intent intentThird=new Intent(this,ThirdActivity.class);
+        startActivity(intentThird);
+    }
+
+    public void onClicktextMealName(View v) {
+        gotoLunchNutritionList();
+    }
+
+
     public void buttonBackOnClick(View v)
     {
 //        getIntent().addFlags(getIntent().FLAG_ACTIVITY_CLEAR_TOP);
@@ -56,8 +66,7 @@ public class SecondActivity extends AppCompatActivity {
 
     public void buttonForwardOnClick(View v)
     {
-        Intent intentThird=new Intent(this,ThirdActivity.class);
-        startActivity(intentThird);
+        gotoLunchNutritionList();
     }
 
     public void onBackPressed()

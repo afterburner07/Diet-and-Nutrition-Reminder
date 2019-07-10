@@ -12,6 +12,16 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
     }
+
+    public void onClicktextChicken(View v) {
+        gotoNutritionChicken();
+    }
+
+    private void gotoNutritionChicken() {
+        Intent intentFourth=new Intent(this,FourthActivity.class);
+        startActivity(intentFourth);
+    }
+
     public void onClickBack(View v)
     {
 //        getIntent().addFlags(getIntent().FLAG_ACTIVITY_CLEAR_TOP);
@@ -23,7 +33,6 @@ public class ThirdActivity extends AppCompatActivity {
 
     public void onClickForward(View v)
     {
-        Intent intentFourth=new Intent(this,FourthActivity.class);
-        startActivity(intentFourth);
+        gotoNutritionChicken();
     }
 }
