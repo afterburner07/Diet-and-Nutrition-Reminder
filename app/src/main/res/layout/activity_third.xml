@@ -43,7 +43,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewMealName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -84,6 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:onClick="onClicktextRice"
             android:padding="5dp"
             android:text="Rice" />
 
@@ -92,6 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:onClick="onClicktextFruits"
             android:padding="5dp"
             android:text="Fruits" />
 
@@ -101,6 +103,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:gravity="center"
+            android:onClick="onClicktextVegetable"
             android:text="Vegetable" />
 
         <TextView
@@ -109,6 +112,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:gravity="center"
+            android:onClick="onClicktextFish"
             android:text="Fish" />
 
     </LinearLayout>
