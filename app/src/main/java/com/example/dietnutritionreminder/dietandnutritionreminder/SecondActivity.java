@@ -43,13 +43,26 @@ public class SecondActivity extends AppCompatActivity {
         startActivity(intentSettings);
     }
 
-    private void gotoLunchNutritionList() {
+    private void gotoLunchNutritionList(char selectedMeal) {
         Intent intentThird=new Intent(this,ThirdActivity.class);
+        intentThird.putExtra("MealName",selectedMeal );
         startActivity(intentThird);
     }
 
     public void onClicktextMealName(View v) {
-        gotoLunchNutritionList();
+        gotoLunchNutritionList('l');
+    }
+
+    public void onClicktextMealAfternoon(View v) {
+        gotoLunchNutritionList('a');
+    }
+
+    public void onClicktextMealDinner(View v) {
+        gotoLunchNutritionList('d');
+    }
+
+    public void onClicktextMealBreakfast(View v) {
+        gotoLunchNutritionList('b');
     }
 
 
@@ -64,9 +77,8 @@ public class SecondActivity extends AppCompatActivity {
         System.exit(0);
     }
 
-    public void buttonForwardOnClick(View v)
-    {
-        gotoLunchNutritionList();
+    public void buttonForwardOnClick(View v) {
+        gotoLunchNutritionList('l');
     }
 
     public void onBackPressed()

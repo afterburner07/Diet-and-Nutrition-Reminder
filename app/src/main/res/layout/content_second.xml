@@ -87,18 +87,24 @@
             android:id="@+id/textViewAfternoon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClicktextMealAfternoon"
+            android:padding="10dp"
             android:text="Afternoon Meal" />
 
         <TextView
             android:id="@+id/textViewDinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClicktextMealDinner"
+            android:padding="10dp"
             android:text="Dinner Meal" />
 
         <TextView
             android:id="@+id/textViewBreakfast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClicktextMealBreakfast"
+            android:padding="10dp"
             android:text="Breakfast Meal" />
     </LinearLayout>
 </RelativeLayout>
