@@ -17,6 +17,8 @@
         android:onClick="onClickBack"
         android:text="Back" />
 
+
+
     <LinearLayout
         android:id="@+id/linearLayoutNutritionInfo"
         android:layout_width="match_parent"
@@ -53,160 +55,409 @@
             android:text="here below- " />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayoutNutritionList"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="328dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/linearLayoutNutritionInfo"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
-
+        android:layout_below="@+id/linearLayoutNutritionInfo">
 
         <LinearLayout
-            android:id="@+id/layoutLinearProtein"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="right"
-                android:paddingRight="10dp"
-                android:text="Protein: " />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="Protein Values" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layoutLinearCalories"
+            android:id="@+id/linearLayoutNutritionList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="5dp">
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayoutNutritionInfo"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="right"
-                android:paddingRight="10dp"
-                android:text="Calories: " />
 
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/layoutLinearProtein"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Protein: " />
+
+                <TextView
+                    android:id="@+id/textViewProteinVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearCalories"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="CaloriesValue" />
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewTotalFat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Calories: " />
+
+                <TextView
+                    android:id="@+id/textViewCaloriesVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearCarvs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Carvs: " />
+
+                <TextView
+                    android:id="@+id/textViewCarvsVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearFat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Fats: " />
+
+                <TextView
+                    android:id="@+id/textViewFatVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearCarbohydrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Carbohydrate: " />
+
+                <TextView
+                    android:id="@+id/textViewCarbohydrateVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearSodium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewSodium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Sodium: " />
+
+                <TextView
+                    android:id="@+id/textViewSodiumVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearCalcium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewCalcioum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Calcium: " />
+
+                <TextView
+                    android:id="@+id/textViewCalcioumVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearIron"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewIron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Iron: " />
+
+                <TextView
+                    android:id="@+id/textViewIronVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearPotassium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewPotassium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Potassium: " />
+
+                <TextView
+                    android:id="@+id/textViewPotassiumVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearCholestrol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewCholestrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Cholestrol: " />
+
+                <TextView
+                    android:id="@+id/textViewCholestrolVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearPipit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewPipit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Pipit: " />
+
+                <TextView
+                    android:id="@+id/textViewPipitVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearSugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewSugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Sugar: " />
+
+                <TextView
+                    android:id="@+id/textViewSugarVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearCarves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewCarves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Carves: " />
+
+                <TextView
+                    android:id="@+id/textViewCarvesVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearTransFat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewTransFat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Trans Fat: " />
+
+                <TextView
+                    android:id="@+id/textViewTransFatVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearVitaminA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewVitaminA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Vitamin A: " />
+
+                <TextView
+                    android:id="@+id/textViewVitaminAVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLinearVitaminC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewVitaminB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="Vitamin C: " />
+
+                <TextView
+                    android:id="@+id/textViewVitaminCVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Unknown Value" />
+            </LinearLayout>
+
         </LinearLayout>
+    </ScrollView>
 
-        <LinearLayout
-            android:id="@+id/layoutLinearCarvs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="5dp">
 
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="right"
-                android:paddingRight="10dp"
-                android:text="Carvs: " />
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="CarvsValue" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layoutLinearFat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="right"
-                android:paddingRight="10dp"
-                android:text="Fats: " />
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="FatValue" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layoutLinearCarbohydrate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="right"
-                android:paddingRight="10dp"
-                android:text="Carbohydrate: " />
-
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="CarbohydrateValue" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layoutLinearSodium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="right"
-                android:paddingRight="10dp"
-                android:text="Sodium: " />
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="SodiumValue" />
-        </LinearLayout>
-
-    </LinearLayout>
 
 </RelativeLayout>

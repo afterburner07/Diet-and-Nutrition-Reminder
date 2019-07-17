@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,13 +14,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".notificationActivity">
-            android:label="Details of notification"
-            android:parentActivityName=".SecondActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SecondActivity"/>
-        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +27,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ThirdActivity" />
         <activity android:name=".FourthActivity" />
-        <activity android:name=".SettingsActivity" />
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>

@@ -71,49 +71,59 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/onClicktextNutritionChicken"
+            android:id="@+id/textViewNutrition1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:onClick="onClicktextChicken"
+            android:onClick="onClickNutrition1"
             android:padding="5dp"
-            android:text="Chicken" />
+            android:text="Chicken"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewRice"
+            android:id="@+id/textViewNutrition2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:onClick="onClicktextRice"
+            android:onClick="onClickNutrition2"
             android:padding="5dp"
-            android:text="Rice" />
+            android:text="Rice"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewFruits"
+            android:id="@+id/textViewNutrition3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:onClick="onClicktextFruits"
+            android:onClick="onClickNutrition3"
             android:padding="5dp"
-            android:text="Fruits" />
+            android:text="Fruits"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewVegetable"
+            android:id="@+id/textViewNutrition4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:gravity="center"
-            android:onClick="onClicktextVegetable"
-            android:text="Vegetable" />
+            android:onClick="onClickNutrition4"
+            android:text="Vegetable"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewFish"
+            android:id="@+id/textViewNutrition5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:gravity="center"
-            android:onClick="onClicktextFish"
-            android:text="Fish" />
+            android:onClick="onClickNutrition5"
+            android:text="Fish"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -139,14 +149,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="right"
-                android:text="Total Nutrition: " />
+                android:text="Total Calories: " />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/textViewTotalCalories"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="sample %" />
+                android:text="Not Found"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
         </LinearLayout>
 
         <LinearLayout
@@ -158,7 +169,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/textViewCarvsVal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -166,11 +177,12 @@
                 android:text="Total Fat: " />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/textViewTotalFat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="sample %" />
+                android:text="Not Found"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
         </LinearLayout>
 
     </LinearLayout>

@@ -26,7 +26,8 @@
         android:layout_above="@+id/button3"
         android:layout_alignParentEnd="true"
         android:onClick="buttonForwardOnClick"
-        android:text="Forward" />
+        android:text="Forward"
+        android:visibility="gone" />
 
     <LinearLayout
         android:id="@+id/linearLayoutMealInfo"
@@ -62,6 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="sampleTime"
+            android:visibility="invisible"
             android:textAppearance="@style/TextAppearance.AppCompat"
             android:textColor="@android:color/black" />
     </LinearLayout>
@@ -89,7 +91,9 @@
             android:layout_height="wrap_content"
             android:onClick="onClicktextMealAfternoon"
             android:padding="10dp"
-            android:text="Afternoon Meal" />
+            android:text="Afternoon Meal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewDinner"
@@ -97,7 +101,9 @@
             android:layout_height="wrap_content"
             android:onClick="onClicktextMealDinner"
             android:padding="10dp"
-            android:text="Dinner Meal" />
+            android:text="Dinner Meal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewBreakfast"
@@ -105,6 +111,8 @@
             android:layout_height="wrap_content"
             android:onClick="onClicktextMealBreakfast"
             android:padding="10dp"
-            android:text="Breakfast Meal" />
+            android:text="Breakfast Meal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
     </LinearLayout>
 </RelativeLayout>
